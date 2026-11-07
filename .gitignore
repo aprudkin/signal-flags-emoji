@@ -1,0 +1,8 @@
+*.zip
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+.DS_Store
+*.tmp
+previews/*-inspection.*

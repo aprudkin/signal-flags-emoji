@@ -1,0 +1,23 @@
+source,actual_format,letter,name,identification,processed,emoji,sha256,notes
+originals/input_file_0.png,JPEG,D,Delta,identified,processed/d-delta.png,emoji/d-delta.png,71d21f700ce2dd38174d594261dd1c1fb3c48a5d465de3d3129ff6b96a3e9b4e,
+originals/input_file_1.png,JPEG,E,Echo,identified,processed/e-echo.png,emoji/e-echo.png,0b29bf63e7f4e5bc03bcb1bc6f2ef589c8a931b54745ddc706e57eb036fd3a98,
+originals/input_file_2.png,JPEG,F,Foxtrot,identified,processed/f-foxtrot.png,emoji/f-foxtrot.png,7f83f57571ddca3d86a3d180a95f317e4cbc93f56e39c5c118b33b86626bd153,
+originals/input_file_3.png,JPEG,G,Golf,identified,processed/g-golf.png,emoji/g-golf.png,e17bcccc0663fe5186a7719031f5bc867f712d676a3afe668086d6f77fc97328,
+originals/input_file_4.png,JPEG,H,Hotel,identified,processed/h-hotel.png,emoji/h-hotel.png,d26dea574c66a167fb6dc6fca68da3d6e42f40ae959d37573760b61dd512414b,
+originals/input_file_5.png,JPEG,I,India,identified,processed/i-india.png,emoji/i-india.png,30ed842374546ef7f6b375035820863a30c1499708bcadfc208e321c35d9cb9b,
+originals/input_file_6.png,JPEG,J,Juliett,identified,processed/j-juliett.png,emoji/j-juliett.png,c3c0122019ceb1f0be719fe629703db59013b5b60ab9c3a6671e30a02c3e1a53,
+originals/input_file_7.png,JPEG,K,Kilo,identified,processed/k-kilo.png,emoji/k-kilo.png,ad163ce929934de73c96fdf685d0bc932dad309a414a0eaf46b50916311406af,
+originals/input_file_8.png,JPEG,L,Lima,identified,processed/l-lima.png,emoji/l-lima.png,cb8b8b51aa90e4b4cc50ea66bcd28e27cc7427b5df2aa367f78e71635d8e8ec4,
+originals/input_file_9.png,JPEG,M,Mike,identified,processed/m-mike.png,emoji/m-mike.png,93433c696d521fadc4e0d14f0d69aefc6bd46ad37c116d9c7ac51bd2354713c6,
+originals/input_file_10.png,JPEG,N,November,identified,processed/n-november.png,emoji/n-november.png,6b13d759832bc8d102f780742697158643c0aebcecf29a173eab37c991f7cee1,
+originals/input_file_11.png,JPEG,O,Oscar,probable_variant,processed/o-oscar.png,emoji/o-oscar.png,c3450e60ee9c40612e89c674dccab4e23283e4379766d348a832021b42ec8822,"Вероятно Oscar: в исходнике жёлтый треугольник сверху справа, красный снизу слева — цвета переставлены относительно стандартного O. Рисунок сохранён."
+originals/input_file_12.png,JPEG,P,Papa,identified,processed/p-papa.png,emoji/p-papa.png,b89e33951d1a745486b592f97fdc27415488256e3f5c4c7ed711c534e2b318b8,
+originals/input_file_13.png,JPEG,Q,Quebec,identified,processed/q-quebec.png,emoji/q-quebec.png,881037eb45b7a03c81a5e7fabc162feb0cf5f03e33453a66ba82a83f6b2ac22b,
+originals/input_file_14.png,JPEG,R,Romeo,identified,processed/r-romeo.png,emoji/r-romeo.png,17fce158a1ae74fcaea9354fbac8558c6278672175318b4b518fe2ca80857141,
+originals/input_file_15.png,JPEG,S,Sierra,identified,processed/s-sierra.png,emoji/s-sierra.png,7f45ecba2b5e6e53d6041a89b31bd86c72ce8488166f3236f115725f0ea7d688,
+originals/input_file_16.png,JPEG,T,Tango,identified,processed/t-tango.png,emoji/t-tango.png,822014adf689c0f10be576b098d4318c9e146e7feda2083d031eb424cb4bf783,
+originals/input_file_17.png,JPEG,V,Victor,identified,processed/v-victor.png,emoji/v-victor.png,dddc8c3063beca28016f61646acc4e097111bba11f310e72e2506d382df36efc,
+originals/input_file_18.png,JPEG,W,Whiskey,identified,processed/w-whiskey.png,emoji/w-whiskey.png,b07380b5a0172c3de159259deda8b8f371886db4bbcb0e42b01d8192deeb1c6c,
+originals/input_file_19.png,JPEG,X,X-ray,probable_variant,processed/x-x-ray.png,emoji/x-x-ray.png,75a9f784d0397418c951e932f9e276befcccbfcfaa15afefa6cc331d0ac51b3f,"Не подтверждён: предположительно X-ray, но в исходнике дополнительный синий диагональный крест. Не стандартный X; рисунок сохранён."
+originals/input_file_20.png,JPEG,Y,Yankee,probable_variant,processed/y-yankee.png,emoji/y-yankee.png,b1313e63194806d8a43b1fe9a21b4a061ccfe3f24ac010cc069ebbd1307a971b,Вероятно Yankee: в исходнике есть дополнительная пересекающая красная полоса; рисунок сохранён без исправления.
+originals/input_file_21.png,JPEG,Z,Zulu,identified,processed/z-zulu.png,emoji/z-zulu.png,14721bab7d6343fcde34ace6427a5025bebe6e1ade069f28576846a612563d84,

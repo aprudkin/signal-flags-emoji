@@ -1,0 +1,798 @@
+{
+  "count": 22,
+  "checks": "dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256",
+  "files": [
+    {
+      "flag": "d-delta",
+      "source_sha256": "71d21f700ce2dd38174d594261dd1c1fb3c48a5d465de3d3129ff6b96a3e9b4e",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 116461,
+        "sha256": "50eaff8ea8e2b3d8839a3e99cf596e88df59318bf8b70b2b7e08f4aa72e5204f"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9690,
+        "sha256": "5266305dd6e86d4e9fbab50a7f3806fa75826e1e8dc3d8f1e3a2c4c2ecc6515b"
+      }
+    },
+    {
+      "flag": "e-echo",
+      "source_sha256": "0b29bf63e7f4e5bc03bcb1bc6f2ef589c8a931b54745ddc706e57eb036fd3a98",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 92970,
+        "sha256": "4da62031a3ed5cbd02aa99904fbc2caf27556a8d393c4e58e473373d2a73e4a9"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8460,
+        "sha256": "13fa4e37df7e9ad739b33d0d85f9aa9562911be6f4afdf5aa2d93c892970727d"
+      }
+    },
+    {
+      "flag": "f-foxtrot",
+      "source_sha256": "7f83f57571ddca3d86a3d180a95f317e4cbc93f56e39c5c118b33b86626bd153",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 78682,
+        "sha256": "248df758b4c8ebbfddb6ec7ab11db2625cc83a1947a948c4aed994d4c6cda717"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8689,
+        "sha256": "25c1cf90dbeab5ba4f9a0128b52288ff4b57add30af9916e6e1469a2d8b85608"
+      }
+    },
+    {
+      "flag": "g-golf",
+      "source_sha256": "e17bcccc0663fe5186a7719031f5bc867f712d676a3afe668086d6f77fc97328",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 109468,
+        "sha256": "9e3c98812ca513967654902f21b6426f93381fa40acd254733a55e0bcbc67568"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8619,
+        "sha256": "061982b7ca055690669a0d3e2f391f8f8aa186cab08ae72dace625d25381fd99"
+      }
+    },
+    {
+      "flag": "h-hotel",
+      "source_sha256": "d26dea574c66a167fb6dc6fca68da3d6e42f40ae959d37573760b61dd512414b",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 63737,
+        "sha256": "74719fdd0ea59583cf1a49028b5dd4c9ef5ec4383819482714a63345ab7555be"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 6730,
+        "sha256": "8caebf5286e5cf13fc978c1c465bc35b8ba304234a9a80b297266a5720a1844d"
+      }
+    },
+    {
+      "flag": "i-india",
+      "source_sha256": "30ed842374546ef7f6b375035820863a30c1499708bcadfc208e321c35d9cb9b",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 91979,
+        "sha256": "6c89a04a168140094fa202f6ad25b2118bd1717f2654c12c45d8f78e10e760d6"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8535,
+        "sha256": "6cb562b0be661aa48682d55a6662a22591ef70e0c0da0e8955bfba76f1e2313b"
+      }
+    },
+    {
+      "flag": "j-juliett",
+      "source_sha256": "c3c0122019ceb1f0be719fe629703db59013b5b60ab9c3a6671e30a02c3e1a53",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 75590,
+        "sha256": "e52811379aa58b64522fd24ea3f70a86df0ed0cd58a3257773787c53a831e8d8"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 7732,
+        "sha256": "ae85bcbb093d3b2d5d73b12323f636619d5b690879eb3eb4934e8d687353e9ee"
+      }
+    },
+    {
+      "flag": "k-kilo",
+      "source_sha256": "ad163ce929934de73c96fdf685d0bc932dad309a414a0eaf46b50916311406af",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 101729,
+        "sha256": "ec7e67843771908a132b8942cc81cfeb828ec6aa29638b95bdda054c9b7a19bd"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8156,
+        "sha256": "cddd728ea7a6a24ece7764b3ddab9675a6af695bf6b0d0e523144c9a5bf6250c"
+      }
+    },
+    {
+      "flag": "l-lima",
+      "source_sha256": "cb8b8b51aa90e4b4cc50ea66bcd28e27cc7427b5df2aa367f78e71635d8e8ec4",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 74126,
+        "sha256": "0d4cbae974e8a6e459e80db2fd25ffedce4fe987a83065bc7787d49c6696e6a8"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 7425,
+        "sha256": "d0254806e42afb4845df9bacf40982d776926777fa269a96335aad4b4177233a"
+      }
+    },
+    {
+      "flag": "m-mike",
+      "source_sha256": "93433c696d521fadc4e0d14f0d69aefc6bd46ad37c116d9c7ac51bd2354713c6",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 104204,
+        "sha256": "b7408ff0d262bca42495cb4e36cb728c752d5144325d580dd3b494820827659f"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 10488,
+        "sha256": "2b9737b4560197b2bbcbcc104c20d4913028af88d33e2266921c8f9aed83acf2"
+      }
+    },
+    {
+      "flag": "n-november",
+      "source_sha256": "6b13d759832bc8d102f780742697158643c0aebcecf29a173eab37c991f7cee1",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 85202,
+        "sha256": "1608e8d87d7ddcfc15e1815cc9cdf4b0756591a5ffb625eb03bbd4b04fac7731"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9307,
+        "sha256": "00faf9df06585062c423dc0cba816ca22bfcd6f394f8e26f89debc8c32e2c5ff"
+      }
+    },
+    {
+      "flag": "o-oscar",
+      "source_sha256": "c3450e60ee9c40612e89c674dccab4e23283e4379766d348a832021b42ec8822",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 120874,
+        "sha256": "29886d4a63deae3685f33cd317d83286205d250dcdf3a08c2ecfb07a73a6b029"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9083,
+        "sha256": "9c68f442eb29cbfef1181338e5745bb220cf2c669366e4d980fc4bc0f06d2295"
+      }
+    },
+    {
+      "flag": "p-papa",
+      "source_sha256": "b89e33951d1a745486b592f97fdc27415488256e3f5c4c7ed711c534e2b318b8",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 97022,
+        "sha256": "dacfe64aa15fb39044f614f7d1cd7cde4f7f1a693302c5f2fa4bd892f926dc13"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8326,
+        "sha256": "4ec2671b5d56cef2af5c308ed175c58b7efd0269a14eccb16724c0e85b84fd4e"
+      }
+    },
+    {
+      "flag": "q-quebec",
+      "source_sha256": "881037eb45b7a03c81a5e7fabc162feb0cf5f03e33453a66ba82a83f6b2ac22b",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 117605,
+        "sha256": "a47b9cce6140d4c1bbcfe717a4fb87a0c9134882885e89e59fd015218d57e996"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9003,
+        "sha256": "b3ceb8230c4cf35dcb0afcb6e72568f8afaa45ab3d25b4846fbb59afc3afcdb4"
+      }
+    },
+    {
+      "flag": "r-romeo",
+      "source_sha256": "17fce158a1ae74fcaea9354fbac8558c6278672175318b4b518fe2ca80857141",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 113177,
+        "sha256": "ab7557e5a48f6c94151f98480833f9a42ee23e89391a73dfd6bb823c733d0d33"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9597,
+        "sha256": "c7e2d14966d9d7426eaf38595f866dd7764f8c879c3d30ad72033135fc20663e"
+      }
+    },
+    {
+      "flag": "s-sierra",
+      "source_sha256": "7f45ecba2b5e6e53d6041a89b31bd86c72ce8488166f3236f115725f0ea7d688",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 49118,
+        "sha256": "0a5b0b11bcf0ed365bd556d86f360307ac24678388c457c4d1c4e4e4ea7e1e4c"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 6553,
+        "sha256": "6f572155c34af6c4bd677ce966260aa58d936320090646761a160b1be4d51fc9"
+      }
+    },
+    {
+      "flag": "t-tango",
+      "source_sha256": "822014adf689c0f10be576b098d4318c9e146e7feda2083d031eb424cb4bf783",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 72911,
+        "sha256": "ab0b1396bee4e7383bf1c63e37b72284e50be063bce40fcf7973238942b25c71"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 7135,
+        "sha256": "df8561c5274a95de9e8d0ab9186521100bfe06c5e1db81fcd12279abb2df459b"
+      }
+    },
+    {
+      "flag": "v-victor",
+      "source_sha256": "dddc8c3063beca28016f61646acc4e097111bba11f310e72e2506d382df36efc",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 82875,
+        "sha256": "5a101ad4f5b3333a9692053071297549d151ac315ff9e751ed71015ea4db60c2"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 10060,
+        "sha256": "3f6d60ec858ebf863283e9a6862de3ae0f92fbd58a16443b1e237ed5cdf28f9a"
+      }
+    },
+    {
+      "flag": "w-whiskey",
+      "source_sha256": "b07380b5a0172c3de159259deda8b8f371886db4bbcb0e42b01d8192deeb1c6c",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 69364,
+        "sha256": "ca61d85d54c68b3b91ad4b3509cfa31477a761d6e053fadfbf4b30406086101f"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8567,
+        "sha256": "a00663c0ccfa5aa0af22f1baff4691215a032e64d51119e58f426236add8872b"
+      }
+    },
+    {
+      "flag": "x-x-ray",
+      "source_sha256": "75a9f784d0397418c951e932f9e276befcccbfcfaa15afefa6cc331d0ac51b3f",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 107408,
+        "sha256": "7e23c49894e8db9648d454e2f99b9ffa989b066b5b3061029695654c801bc8ca"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 10986,
+        "sha256": "11b92abf1ea92d1a63d4ac6784093535c21fc12ae3d58e0e410403c7db412504"
+      }
+    },
+    {
+      "flag": "y-yankee",
+      "source_sha256": "b1313e63194806d8a43b1fe9a21b4a061ccfe3f24ac010cc069ebbd1307a971b",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 152365,
+        "sha256": "7809b32c0226522b4a1c769e6c6d5cf49446f3fa8a08ad6ac1b9edc3f94e07ae"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 12767,
+        "sha256": "31c3b50a62f08a1ae7b8895044e335b848a33ac40a0df9a3d55b3b6bb23fff42"
+      }
+    },
+    {
+      "flag": "z-zulu",
+      "source_sha256": "14721bab7d6343fcde34ace6427a5025bebe6e1ade069f28576846a612563d84",
+      "processed": {
+        "size": [
+          1024,
+          1024
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          71,
+          73,
+          953,
+          958
+        ],
+        "bytes": 100999,
+        "sha256": "14067e007263c5fc5d8a446e581c195c35d4a9697f48a030751c480dfad66434"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9451,
+        "sha256": "dabc936ac168e877511bb26b496476cb80248872856d8767efac6c7d89fffc86"
+      }
+    }
+  ]
+}
