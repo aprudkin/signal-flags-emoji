@@ -15,7 +15,52 @@
   },
   "flags": [
     {
-      "source": "input_file_0.png",
+      "source": "a-alfa.jpg",
+      "original_name": "Gemini_Generated_Image_dbghf0dbghf0dbgh.jpeg",
+      "sha256": "3491dff4649040a7c5c4555d8335fc1c1dbf142b851bb8674d7d8231ce58643e",
+      "letter": "A",
+      "name": "Alfa",
+      "slug": "a-alfa",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "identification": "identified",
+      "notes": "Добавлен пользователем отдельно от исходного архива.",
+      "settings": {}
+    },
+    {
+      "source": "b-bravo.jpg",
+      "original_name": "Gemini_Generated_Image_38qngu38qngu38qn.jpeg",
+      "sha256": "4e7de00c38c636fa476e51ca654cf2287147d074728a9ca3e5ee809826f05948",
+      "letter": "B",
+      "name": "Bravo",
+      "slug": "b-bravo",
+      "colors": [
+        "red"
+      ],
+      "identification": "identified",
+      "notes": "Добавлен пользователем отдельно от исходного архива.",
+      "settings": {}
+    },
+    {
+      "source": "c-charlie.jpg",
+      "original_name": "Gemini_Generated_Image_a7m683a7m683a7m6.jpeg",
+      "sha256": "b48345384e6f0ef32bffeda73273599f7e20381a3e634d02a7e2a7a1aab3edb6",
+      "letter": "C",
+      "name": "Charlie",
+      "slug": "c-charlie",
+      "colors": [
+        "blue",
+        "white",
+        "red"
+      ],
+      "identification": "identified",
+      "notes": "Добавлен пользователем отдельно от исходного архива.",
+      "settings": {}
+    },
+    {
+      "source": "d-delta.jpg",
       "sha256": "71d21f700ce2dd38174d594261dd1c1fb3c48a5d465de3d3129ff6b96a3e9b4e",
       "letter": "D",
       "name": "Delta",
@@ -26,10 +71,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_0.png",
+      "original_name": "input_file_0.png"
     },
     {
-      "source": "input_file_1.png",
+      "source": "e-echo.jpg",
       "sha256": "0b29bf63e7f4e5bc03bcb1bc6f2ef589c8a931b54745ddc706e57eb036fd3a98",
       "letter": "E",
       "name": "Echo",
@@ -40,10 +87,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_1.png",
+      "original_name": "input_file_1.png"
     },
     {
-      "source": "input_file_2.png",
+      "source": "f-foxtrot.jpg",
       "sha256": "7f83f57571ddca3d86a3d180a95f317e4cbc93f56e39c5c118b33b86626bd153",
       "letter": "F",
       "name": "Foxtrot",
@@ -54,10 +103,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_2.png",
+      "original_name": "input_file_2.png"
     },
     {
-      "source": "input_file_3.png",
+      "source": "g-golf.jpg",
       "sha256": "e17bcccc0663fe5186a7719031f5bc867f712d676a3afe668086d6f77fc97328",
       "letter": "G",
       "name": "Golf",
@@ -68,10 +119,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_3.png",
+      "original_name": "input_file_3.png"
     },
     {
-      "source": "input_file_4.png",
+      "source": "h-hotel.jpg",
       "sha256": "d26dea574c66a167fb6dc6fca68da3d6e42f40ae959d37573760b61dd512414b",
       "letter": "H",
       "name": "Hotel",
@@ -82,10 +135,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_4.png",
+      "original_name": "input_file_4.png"
     },
     {
-      "source": "input_file_5.png",
+      "source": "i-india.jpg",
       "sha256": "30ed842374546ef7f6b375035820863a30c1499708bcadfc208e321c35d9cb9b",
       "letter": "I",
       "name": "India",
@@ -98,10 +153,12 @@
       "notes": "",
       "settings": {
         "relief": 0.12
-      }
+      },
+      "archive_member": "input_file_5.png",
+      "original_name": "input_file_5.png"
     },
     {
-      "source": "input_file_6.png",
+      "source": "j-juliett.jpg",
       "sha256": "c3c0122019ceb1f0be719fe629703db59013b5b60ab9c3a6671e30a02c3e1a53",
       "letter": "J",
       "name": "Juliett",
@@ -112,10 +169,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_6.png",
+      "original_name": "input_file_6.png"
     },
     {
-      "source": "input_file_7.png",
+      "source": "k-kilo.jpg",
       "sha256": "ad163ce929934de73c96fdf685d0bc932dad309a414a0eaf46b50916311406af",
       "letter": "K",
       "name": "Kilo",
@@ -126,10 +185,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_7.png",
+      "original_name": "input_file_7.png"
     },
     {
-      "source": "input_file_8.png",
+      "source": "l-lima.jpg",
       "sha256": "cb8b8b51aa90e4b4cc50ea66bcd28e27cc7427b5df2aa367f78e71635d8e8ec4",
       "letter": "L",
       "name": "Lima",
@@ -140,10 +201,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_8.png",
+      "original_name": "input_file_8.png"
     },
     {
-      "source": "input_file_9.png",
+      "source": "m-mike.jpg",
       "sha256": "93433c696d521fadc4e0d14f0d69aefc6bd46ad37c116d9c7ac51bd2354713c6",
       "letter": "M",
       "name": "Mike",
@@ -154,10 +217,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_9.png",
+      "original_name": "input_file_9.png"
     },
     {
-      "source": "input_file_10.png",
+      "source": "n-november.jpg",
       "sha256": "6b13d759832bc8d102f780742697158643c0aebcecf29a173eab37c991f7cee1",
       "letter": "N",
       "name": "November",
@@ -168,10 +233,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_10.png",
+      "original_name": "input_file_10.png"
     },
     {
-      "source": "input_file_11.png",
+      "source": "o-oscar.jpg",
       "sha256": "c3450e60ee9c40612e89c674dccab4e23283e4379766d348a832021b42ec8822",
       "letter": "O",
       "name": "Oscar",
@@ -182,10 +249,12 @@
       ],
       "identification": "probable_variant",
       "notes": "Вероятно Oscar: в исходнике жёлтый треугольник сверху справа, красный снизу слева — цвета переставлены относительно стандартного O. Рисунок сохранён.",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_11.png",
+      "original_name": "input_file_11.png"
     },
     {
-      "source": "input_file_12.png",
+      "source": "p-papa.jpg",
       "sha256": "b89e33951d1a745486b592f97fdc27415488256e3f5c4c7ed711c534e2b318b8",
       "letter": "P",
       "name": "Papa",
@@ -196,10 +265,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_12.png",
+      "original_name": "input_file_12.png"
     },
     {
-      "source": "input_file_13.png",
+      "source": "q-quebec.jpg",
       "sha256": "881037eb45b7a03c81a5e7fabc162feb0cf5f03e33453a66ba82a83f6b2ac22b",
       "letter": "Q",
       "name": "Quebec",
@@ -209,10 +280,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_13.png",
+      "original_name": "input_file_13.png"
     },
     {
-      "source": "input_file_14.png",
+      "source": "r-romeo.jpg",
       "sha256": "17fce158a1ae74fcaea9354fbac8558c6278672175318b4b518fe2ca80857141",
       "letter": "R",
       "name": "Romeo",
@@ -223,10 +296,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_14.png",
+      "original_name": "input_file_14.png"
     },
     {
-      "source": "input_file_15.png",
+      "source": "s-sierra.jpg",
       "sha256": "7f45ecba2b5e6e53d6041a89b31bd86c72ce8488166f3236f115725f0ea7d688",
       "letter": "S",
       "name": "Sierra",
@@ -237,10 +312,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_15.png",
+      "original_name": "input_file_15.png"
     },
     {
-      "source": "input_file_16.png",
+      "source": "t-tango.jpg",
       "sha256": "822014adf689c0f10be576b098d4318c9e146e7feda2083d031eb424cb4bf783",
       "letter": "T",
       "name": "Tango",
@@ -252,10 +329,27 @@
       ],
       "identification": "identified",
       "notes": "",
+      "settings": {},
+      "archive_member": "input_file_16.png",
+      "original_name": "input_file_16.png"
+    },
+    {
+      "source": "u-uniform.jpg",
+      "original_name": "Gemini_Generated_Image_yht6ywyht6ywyht6.jpeg",
+      "sha256": "eff121888d549f4593153bce30193ac805bd5b468c3ce8661f124788dbca5c6c",
+      "letter": "U",
+      "name": "Uniform",
+      "slug": "u-uniform",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "identification": "identified",
+      "notes": "Добавлен пользователем отдельно от исходного архива.",
       "settings": {}
     },
     {
-      "source": "input_file_17.png",
+      "source": "v-victor.jpg",
       "sha256": "dddc8c3063beca28016f61646acc4e097111bba11f310e72e2506d382df36efc",
       "letter": "V",
       "name": "Victor",
@@ -266,10 +360,12 @@
       ],
       "identification": "identified",
       "notes": "",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_17.png",
+      "original_name": "input_file_17.png"
     },
     {
-      "source": "input_file_18.png",
+      "source": "w-whiskey.jpg",
       "sha256": "b07380b5a0172c3de159259deda8b8f371886db4bbcb0e42b01d8192deeb1c6c",
       "letter": "W",
       "name": "Whiskey",
@@ -283,10 +379,12 @@
       "notes": "",
       "settings": {
         "relief": 0.12
-      }
+      },
+      "archive_member": "input_file_18.png",
+      "original_name": "input_file_18.png"
     },
     {
-      "source": "input_file_19.png",
+      "source": "x-x-ray.jpg",
       "sha256": "75a9f784d0397418c951e932f9e276befcccbfcfaa15afefa6cc331d0ac51b3f",
       "letter": "X",
       "name": "X-ray",
@@ -297,10 +395,12 @@
       ],
       "identification": "probable_variant",
       "notes": "Не подтверждён: предположительно X-ray, но в исходнике дополнительный синий диагональный крест. Не стандартный X; рисунок сохранён.",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_19.png",
+      "original_name": "input_file_19.png"
     },
     {
-      "source": "input_file_20.png",
+      "source": "y-yankee.jpg",
       "sha256": "b1313e63194806d8a43b1fe9a21b4a061ccfe3f24ac010cc069ebbd1307a971b",
       "letter": "Y",
       "name": "Yankee",
@@ -311,10 +411,12 @@
       ],
       "identification": "probable_variant",
       "notes": "Вероятно Yankee: в исходнике есть дополнительная пересекающая красная полоса; рисунок сохранён без исправления.",
-      "settings": {}
+      "settings": {},
+      "archive_member": "input_file_20.png",
+      "original_name": "input_file_20.png"
     },
     {
-      "source": "input_file_21.png",
+      "source": "z-zulu.jpg",
       "sha256": "14721bab7d6343fcde34ace6427a5025bebe6e1ade069f28576846a612563d84",
       "letter": "Z",
       "name": "Zulu",
@@ -329,7 +431,9 @@
       "notes": "",
       "settings": {
         "relief": 0.12
-      }
+      },
+      "archive_member": "input_file_21.png",
+      "original_name": "input_file_21.png"
     }
   ]
 }

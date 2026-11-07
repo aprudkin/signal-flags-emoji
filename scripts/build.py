@@ -25,10 +25,12 @@ def save_png(im, path):
 
 def extract_if_needed():
     missing = [f for f in CONFIG['flags'] if not (ROOT/'originals'/f['source']).exists()]
+    if any('archive_member' not in f for f in missing):
+        raise FileNotFoundError('Restore separately supplied originals: ' + ', '.join(f['source'] for f in missing if 'archive_member' not in f))
     if missing:
         with zipfile.ZipFile(ROOT/'Maritime_Signal_Flags.zip') as archive:
             for f in missing:
-                (ROOT/'originals'/f['source']).write_bytes(archive.read(f['source']))
+                (ROOT/'originals'/f['source']).write_bytes(archive.read(f['archive_member']))
 
 def silhouette(a, threshold):
     # Flood only the light region connected to the image boundary. The closed
@@ -54,6 +56,7 @@ def process(flag):
     if im.info.get('icc_profile'):
         im = ImageCms.profileToProfile(im, io.BytesIO(im.info['icc_profile']),
                                       ImageCms.createProfile('sRGB'), outputMode='RGB')
+    scale = max(im.size) / 1024
     a = np.asarray(im.convert('RGB'), dtype=float)
     body = silhouette(a, cfg['background_threshold'])
     distance = ndi.distance_transform_edt(body)
@@ -73,17 +76,17 @@ def process(flag):
     palette = flag['colors']
     classes = np.full(body.shape, -1, dtype=np.int16)
     for i, name in enumerate(palette):
-        classes[samples[name] & (distance > 16)] = i
+        classes[samples[name] & (distance > 16*scale)] = i
     missing = classes < 0
     indices = ndi.distance_transform_edt(missing, return_distances=False, return_indices=True)
     classes = classes[tuple(indices)]
     if np.any(classes < 0):
         raise ValueError(f'No usable color samples: {flag["slug"]}')
     # Preserve broad original lighting but reduce fine texture and shadow range.
-    lighting = ndi.gaussian_filter(value / 255.0, cfg['smoothing'])
+    lighting = ndi.gaussian_filter(value / 255.0, cfg['smoothing']*scale)
     output = np.zeros_like(a)
     for i, name in enumerate(palette):
-        weight = ndi.gaussian_filter((classes == i).astype(float), 0.65)
+        weight = ndi.gaussian_filter((classes == i).astype(float), 0.65*scale)
         base = rgb(cfg['palette'][name])
         if name == 'white':
             color = np.repeat((245 + 10*lighting)[..., None], 3, axis=2)
@@ -94,9 +97,9 @@ def process(flag):
         output += color * weight[..., None]
     # A narrow inward contour follows the source silhouette, including cutouts.
     # Original dark outline is replaced, not added outside the source geometry.
-    edge = np.clip(cfg['outline_width'] + 0.5 - distance, 0, 1)
+    edge = np.clip(cfg['outline_width']*scale + 0.5 - distance, 0, 1)
     output = output*(1-edge[..., None]) + rgb(cfg['outline'])*edge[..., None]
-    alpha = np.rint(ndi.gaussian_filter(body.astype(float), 0.55)*255).astype('uint8')
+    alpha = np.rint(ndi.gaussian_filter(body.astype(float), 0.55*scale)*255).astype('uint8')
     alpha[alpha < 4] = 0
     alpha[alpha > 251] = 255
     output = np.rint(output).clip(0, 255).astype('uint8')
@@ -138,8 +141,8 @@ def previews(flags, results):
             icon=em.resize((24,24),RESAMPLE);sheet.paste(icon,(731,y+48),icon)
             draw.text((765,y+49),'received',font=font(20),fill=fg)
         save_png(sheet,ROOT/'previews'/f'contact-{theme}.png')
-        overview=Image.new('RGB',(880,80+5*190),bg);d=ImageDraw.Draw(overview)
-        d.text((24,20),f'SIGNAL FLAGS / 22 emoji / {bg}',font=font(25),fill=fg)
+        overview=Image.new('RGB',(880,80+((len(flags)+4)//5)*190),bg);d=ImageDraw.Draw(overview)
+        d.text((24,20),f'SIGNAL FLAGS / {len(flags)} emoji / {bg}',font=font(25),fill=fg)
         for i,(f,(_,em)) in enumerate(zip(flags,results)):
             x=i%5*176;y=80+i//5*190
             overview.paste(em,(x+38,y+10),em)
@@ -163,7 +166,9 @@ def validate(flags):
     report=[]
     for f in flags:
         item={'flag':f['slug'],'source_sha256':f['sha256']}
-        for folder,expected in [('processed',(1024,1024)),('emoji',(100,100))]:
+        with Image.open(ROOT/'originals'/f['source']) as original:
+            source_size = original.size
+        for folder,expected in [('processed',source_size),('emoji',(100,100))]:
             path=ROOT/folder/f'{f["slug"]}.png'
             with Image.open(path) as im:
                 assert im.format=='PNG' and im.mode=='RGBA' and im.size==expected, path
@@ -173,7 +178,8 @@ def validate(flags):
                 assert not np.any(np.r_[a[0],a[-1],a[:,0],a[:,-1]]),path
                 mask=a>127; labels,n=ndi.label(mask)
                 assert n==1 and np.array_equal(ndi.binary_fill_holes(mask),mask),path
-                core=ndi.binary_erosion(mask,iterations=3)
+                # Match the alpha edge width at native source resolution.
+                core=ndi.binary_erosion(mask,iterations=max(3, int(np.ceil(3*max(im.size)/1024))))
                 assert np.all(a[core]==255),path
                 box=im.getbbox()
                 if folder=='emoji':
@@ -184,15 +190,17 @@ def validate(flags):
     (ROOT/'docs/validation.json').write_text(json.dumps({'count':len(flags),'checks':'dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256','files':report},indent=2)+'\n')
 
 def catalog(flags):
-    fields=['source','actual_format','letter','name','identification','processed','emoji','sha256','notes']
+    fields=['source','original_name','archive_member','actual_format','letter','name','identification','processed','emoji','sha256','notes']
     rows=[]
     for f in flags:
-        rows.append(dict(source='originals/'+f['source'],actual_format='JPEG',letter=f['letter'],name=f['name'],identification=f['identification'],processed=f'processed/{f["slug"]}.png',emoji=f'emoji/{f["slug"]}.png',sha256=f['sha256'],notes=f['notes']))
+        rows.append(dict(source='originals/'+f['source'],original_name=f['original_name'],archive_member=f.get('archive_member',''),actual_format='JPEG',letter=f['letter'],name=f['name'],identification=f['identification'],processed=f'processed/{f["slug"]}.png',emoji=f'emoji/{f["slug"]}.png',sha256=f['sha256'],notes=f['notes']))
     with (ROOT/'catalog.csv').open('w',newline='') as out:
         writer=csv.DictWriter(out,fieldnames=fields,lineterminator="\n");writer.writeheader();writer.writerows(rows)
-    text='# Каталог флагов\n\n22 исходника: 19 определены уверенно, O/X/Y — предположительные варианты с отклонениями; точная идентификация X не подтверждена. Отсутствуют A, B, C, U. Знак ? на превью отмечает предположительное обозначение.\n\n| Флаг | Исходник (JPEG) | Обработанный PNG | Эмодзи | Примечание |\n|---|---|---|---|---|\n'
+    missing = ', '.join(sorted(set('ABCDEFGHIJKLMNOPQRSTUVWXYZ') - {f['letter'] for f in flags})) or 'нет'
+    confident = sum(f['identification'] == 'identified' for f in flags)
+    text=f'# Каталог флагов\n\n{len(flags)} исходников; {confident} определены уверенно. O/X/Y — предположительные варианты с отклонениями; точная идентификация X не подтверждена. Отсутствующие буквы: {missing}. Знак ? на превью отмечает предположительное обозначение. Прежние имена и записи архива сохранены в catalog.csv.\n\n| Флаг | Исходник (JPEG) | Обработанный PNG | Эмодзи | Примечание |\n|---|---|---|---|---|\n'
     for f,row in zip(flags,rows):
-        text+=f'| {f["letter"]} {display_name(f)} | [{f["source"]}]({row["source"]}) | [1024 px]({row["processed"]}) | [100 px]({row["emoji"]}) | {f["notes"]} |\n'
+        text+=f'| {f["letter"]} {display_name(f)} | [{f["source"]}]({row["source"]}) | [PNG]({row["processed"]}) | [100 px]({row["emoji"]}) | {f["notes"]} |\n'
     (ROOT/'CATALOG.md').write_text(text)
 
 def main():
@@ -200,7 +208,7 @@ def main():
         (ROOT/folder).mkdir(exist_ok=True)
     extract_if_needed()
     flags=CONFIG['flags']
-    actual={p.name for p in (ROOT/'originals').iterdir() if p.is_file()}
+    actual={p.name for p in (ROOT/'originals').iterdir() if p.is_file() and p.name != '.DS_Store'}
     assert actual=={f['source'] for f in flags},'Uncatalogued or missing source files'
     results=[]
     for f in flags:

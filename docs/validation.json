@@ -1,7 +1,115 @@
 {
-  "count": 22,
+  "count": 26,
   "checks": "dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256",
   "files": [
+    {
+      "flag": "a-alfa",
+      "source_sha256": "3491dff4649040a7c5c4555d8335fc1c1dbf142b851bb8674d7d8231ce58643e",
+      "processed": {
+        "size": [
+          2048,
+          2048
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          142,
+          147,
+          1905,
+          1916
+        ],
+        "bytes": 155687,
+        "sha256": "38ea4f2208912460c08937c07b36083c95a8000191d26f41f1d9b47a4d8dcab7"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 6790,
+        "sha256": "0a44f9bed1e39dbc18585ed1954cbf84031de9a8168a622fa3d7e337123bc482"
+      }
+    },
+    {
+      "flag": "b-bravo",
+      "source_sha256": "4e7de00c38c636fa476e51ca654cf2287147d074728a9ca3e5ee809826f05948",
+      "processed": {
+        "size": [
+          2048,
+          2048
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          143,
+          147,
+          1905,
+          1915
+        ],
+        "bytes": 229397,
+        "sha256": "a328f48fe80e85199071e31ec1da54eb31f1f9191463209d343d10e240ed9978"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 8430,
+        "sha256": "778fa00eb8395f2843b52ea03e4ab402a3f51554296476c9ee0879243eff017d"
+      }
+    },
+    {
+      "flag": "c-charlie",
+      "source_sha256": "b48345384e6f0ef32bffeda73273599f7e20381a3e634d02a7e2a7a1aab3edb6",
+      "processed": {
+        "size": [
+          2048,
+          2048
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          142,
+          147,
+          1906,
+          1916
+        ],
+        "bytes": 227516,
+        "sha256": "142fc6b9fad0f599129632f3d8f3b9cfb24b9a7f51622d09a190847e0f5d8756"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 9073,
+        "sha256": "5222237258ef7187962b7d24670aa35c770abb7ea11490c2f21814f6d9e38929"
+      }
+    },
     {
       "flag": "d-delta",
       "source_sha256": "71d21f700ce2dd38174d594261dd1c1fb3c48a5d465de3d3129ff6b96a3e9b4e",
@@ -612,6 +720,42 @@
         ],
         "bytes": 7135,
         "sha256": "df8561c5274a95de9e8d0ab9186521100bfe06c5e1db81fcd12279abb2df459b"
+      }
+    },
+    {
+      "flag": "u-uniform",
+      "source_sha256": "eff121888d549f4593153bce30193ac805bd5b468c3ce8661f124788dbca5c6c",
+      "processed": {
+        "size": [
+          2048,
+          2048
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          143,
+          147,
+          1906,
+          1915
+        ],
+        "bytes": 176910,
+        "sha256": "743596431219e3931871039d1eb1c2ce86b95b92c854e9bc9c77bd36a52011f2"
+      },
+      "emoji": {
+        "size": [
+          100,
+          100
+        ],
+        "rgba": true,
+        "srgb": true,
+        "bbox": [
+          5,
+          5,
+          95,
+          95
+        ],
+        "bytes": 7477,
+        "sha256": "aa3f2abfc3096d95c592aa7addab4365c1a3ff26d3740b7bf83380ad4805f07f"
       }
     },
     {
