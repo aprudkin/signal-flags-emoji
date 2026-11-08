@@ -7,15 +7,12 @@ import json
 import zipfile
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageCms, ImageFilter, PngImagePlugin
+from PIL import Image, ImageDraw, ImageFont, ImageCms, PngImagePlugin
 from scipy import ndimage as ndi
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / 'scripts/flags.json').read_text())
 RESAMPLE = Image.Resampling.LANCZOS
-
-def rgb(hex_color):
-    return np.array([int(hex_color[i:i+2], 16) for i in (1, 3, 5)], dtype=float)
 
 def save_png(im, path):
     # PNG sRGB chunk is deterministic (unlike freshly generated ICC timestamps).
@@ -49,7 +46,7 @@ def silhouette(a, threshold):
     return body
 
 def process(flag):
-    cfg = CONFIG['defaults'] | flag['settings']
+    cfg = CONFIG['defaults'] | flag.get('settings', {})
     source = ROOT/'originals'/flag['source']
     assert hashlib.sha256(source.read_bytes()).hexdigest() == flag['sha256'], source
     im = Image.open(source)
@@ -57,54 +54,21 @@ def process(flag):
         im = ImageCms.profileToProfile(im, io.BytesIO(im.info['icc_profile']),
                                       ImageCms.createProfile('sRGB'), outputMode='RGB')
     scale = max(im.size) / 1024
-    a = np.asarray(im.convert('RGB'), dtype=float)
-    body = silhouette(a, cfg['background_threshold'])
-    distance = ndi.distance_transform_edt(body)
-    smooth = np.asarray(im.convert('RGB').filter(ImageFilter.MedianFilter(3)), dtype=float)
-    r, g, b = np.moveaxis(smooth, 2, 0)
-    value = smooth.max(axis=2)
-    chroma = value - smooth.min(axis=2)
-    # Reliable color samples. Ambiguous JPEG pixels and decorative dark lines
-    # inherit the nearest reliable sample, without moving field boundaries.
-    samples = {
-        'blue': (b-r > 22) & (b-g > 12),
-        'red': (g < r*0.30) & (r-b > 22),
-        'yellow': (r-b > 35) & (g-b > 25) & (g > r*0.45),
-        'white': (chroma < 25) & (value > 115),
-        'black': (chroma < 30) & (value < 85),
-    }
-    palette = flag['colors']
-    classes = np.full(body.shape, -1, dtype=np.int16)
-    for i, name in enumerate(palette):
-        classes[samples[name] & (distance > 16*scale)] = i
-    missing = classes < 0
-    indices = ndi.distance_transform_edt(missing, return_distances=False, return_indices=True)
-    classes = classes[tuple(indices)]
-    if np.any(classes < 0):
-        raise ValueError(f'No usable color samples: {flag["slug"]}')
-    # Preserve broad original lighting but reduce fine texture and shadow range.
-    lighting = ndi.gaussian_filter(value / 255.0, cfg['smoothing']*scale)
-    output = np.zeros_like(a)
-    for i, name in enumerate(palette):
-        weight = ndi.gaussian_filter((classes == i).astype(float), 0.65*scale)
-        base = rgb(cfg['palette'][name])
-        if name == 'white':
-            color = np.repeat((245 + 10*lighting)[..., None], 3, axis=2)
-        elif name == 'black':
-            color = base + 8*lighting[..., None]
-        else:
-            color = base * (1-cfg['relief']*(1-lighting[..., None]))
-        output += color * weight[..., None]
-    # A narrow inward contour follows the source silhouette, including cutouts.
-    # Original dark outline is replaced, not added outside the source geometry.
-    edge = np.clip(cfg['outline_width']*scale + 0.5 - distance, 0, 1)
-    output = output*(1-edge[..., None]) + rgb(cfg['outline'])*edge[..., None]
+    source_pixels = np.asarray(im.convert('RGB'))
+    pixels = source_pixels.copy()
+    body = silhouette(pixels.astype(float), cfg['background_threshold'])
     alpha = np.rint(ndi.gaussian_filter(body.astype(float), 0.55*scale)*255).astype('uint8')
     alpha[alpha < 4] = 0
     alpha[alpha > 251] = 255
-    output = np.rint(output).clip(0, 255).astype('uint8')
-    output[alpha == 0] = 0
-    result = Image.fromarray(np.dstack([output, alpha]))
+    # Remove the white JPEG matte only from the translucent outer fringe.
+    # Keep the source RGB values of every opaque pixel, including its outline.
+    solid = ndi.distance_transform_edt(body) >= 2*scale
+    nearest = ndi.distance_transform_edt(~solid, return_distances=False, return_indices=True)
+    fringe = (alpha > 0) & (alpha < 255)
+    pixels[fringe] = pixels[tuple(nearest)][fringe]
+    pixels[alpha == 0] = 0
+    assert np.array_equal(pixels[alpha == 255], source_pixels[alpha == 255])
+    result = Image.fromarray(np.dstack([pixels, alpha]))
     save_png(result, ROOT/'processed'/f'{flag["slug"]}.png')
     cropped = result.crop(result.getbbox())
     cropped.thumbnail((90, 90), RESAMPLE)  # Pillow uses premultiplied-alpha RGBA resampling.
@@ -168,12 +132,20 @@ def validate(flags):
         item={'flag':f['slug'],'source_sha256':f['sha256']}
         with Image.open(ROOT/'originals'/f['source']) as original:
             source_size = original.size
+            if original.info.get('icc_profile'):
+                original = ImageCms.profileToProfile(original, io.BytesIO(original.info['icc_profile']),
+                                                      ImageCms.createProfile('sRGB'), outputMode='RGB')
+            source_pixels = np.asarray(original.convert('RGB'))
         for folder,expected in [('processed',source_size),('emoji',(100,100))]:
             path=ROOT/folder/f'{f["slug"]}.png'
             with Image.open(path) as im:
                 assert im.format=='PNG' and im.mode=='RGBA' and im.size==expected, path
                 assert im.info.get('srgb')==0, path
-                a=np.array(im)[...,3]
+                pixels = np.array(im)
+                a = pixels[..., 3]
+                if folder == 'processed':
+                    assert np.array_equal(pixels[a == 255, :3], source_pixels[a == 255]), path
+                    item['original_opaque_rgb_preserved'] = True
                 assert a.min()==0 and a.max()==255 and np.any((a>0)&(a<255)),path
                 assert not np.any(np.r_[a[0],a[-1],a[:,0],a[:,-1]]),path
                 mask=a>127; labels,n=ndi.label(mask)
@@ -187,7 +159,7 @@ def validate(flags):
                     assert min(box[0],box[1],100-box[2],100-box[3])>=5,path
                 item[folder]={'size':list(im.size),'rgba':True,'srgb':True,'bbox':list(box),'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
         report.append(item)
-    (ROOT/'docs/validation.json').write_text(json.dumps({'count':len(flags),'checks':'dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256','files':report},indent=2)+'\n')
+    (ROOT/'docs/validation.json').write_text(json.dumps({'count':len(flags),'checks':'dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256, original opaque RGB preserved','files':report},indent=2)+'\n')
 
 def catalog(flags):
     fields=['source','original_name','archive_member','actual_format','letter','name','identification','processed','emoji','sha256','notes']

@@ -1,6 +1,6 @@
 # Статичный набор эмодзи в Telegram
 
-Готовый набор: [Добавить эмодзи в Telegram — HoistTheFlag](https://t.me/addemoji/HoistTheFlag).
+Готовый набор: [Добавить эмодзи в Telegram — HoistTheFlags](https://t.me/addemoji/HoistTheFlags).
 
 Готовые изображения находятся в `emoji/`: 26 PNG RGBA, строго 100 × 100 px, с прозрачным фоном. Telegram допускает PNG или WEBP именно такого размера для статичных пользовательских эмодзи; обычные стикеры имеют другие требования. [Официальные требования](https://core.telegram.org/stickers#static-stickers-and-emoji).
 

@@ -1,17 +1,6 @@
 {
   "defaults": {
-    "outline": "#69798F",
-    "outline_width": 10.0,
-    "relief": 0.17,
-    "background_threshold": 175,
-    "smoothing": 2.0,
-    "palette": {
-      "blue": "#1471E9",
-      "red": "#F32730",
-      "yellow": "#FFE416",
-      "white": "#FFFFFF",
-      "black": "#101218"
-    }
+    "background_threshold": 175
   },
   "flags": [
     {
@@ -21,13 +10,8 @@
       "letter": "A",
       "name": "Alfa",
       "slug": "a-alfa",
-      "colors": [
-        "white",
-        "blue"
-      ],
       "identification": "identified",
-      "notes": "Добавлен пользователем отдельно от исходного архива.",
-      "settings": {}
+      "notes": "Добавлен пользователем отдельно от исходного архива."
     },
     {
       "source": "b-bravo.jpg",
@@ -36,12 +20,8 @@
       "letter": "B",
       "name": "Bravo",
       "slug": "b-bravo",
-      "colors": [
-        "red"
-      ],
       "identification": "identified",
-      "notes": "Добавлен пользователем отдельно от исходного архива.",
-      "settings": {}
+      "notes": "Добавлен пользователем отдельно от исходного архива."
     },
     {
       "source": "c-charlie.jpg",
@@ -50,14 +30,8 @@
       "letter": "C",
       "name": "Charlie",
       "slug": "c-charlie",
-      "colors": [
-        "blue",
-        "white",
-        "red"
-      ],
       "identification": "identified",
-      "notes": "Добавлен пользователем отдельно от исходного архива.",
-      "settings": {}
+      "notes": "Добавлен пользователем отдельно от исходного архива."
     },
     {
       "source": "d-delta.jpg",
@@ -65,13 +39,8 @@
       "letter": "D",
       "name": "Delta",
       "slug": "d-delta",
-      "colors": [
-        "yellow",
-        "blue"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_0.png",
       "original_name": "input_file_0.png"
     },
@@ -81,13 +50,8 @@
       "letter": "E",
       "name": "Echo",
       "slug": "e-echo",
-      "colors": [
-        "blue",
-        "red"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_1.png",
       "original_name": "input_file_1.png"
     },
@@ -97,13 +61,8 @@
       "letter": "F",
       "name": "Foxtrot",
       "slug": "f-foxtrot",
-      "colors": [
-        "white",
-        "red"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_2.png",
       "original_name": "input_file_2.png"
     },
@@ -113,13 +72,8 @@
       "letter": "G",
       "name": "Golf",
       "slug": "g-golf",
-      "colors": [
-        "yellow",
-        "blue"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_3.png",
       "original_name": "input_file_3.png"
     },
@@ -129,13 +83,8 @@
       "letter": "H",
       "name": "Hotel",
       "slug": "h-hotel",
-      "colors": [
-        "white",
-        "red"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_4.png",
       "original_name": "input_file_4.png"
     },
@@ -145,15 +94,8 @@
       "letter": "I",
       "name": "India",
       "slug": "i-india",
-      "colors": [
-        "yellow",
-        "black"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {
-        "relief": 0.12
-      },
       "archive_member": "input_file_5.png",
       "original_name": "input_file_5.png"
     },
@@ -163,13 +105,8 @@
       "letter": "J",
       "name": "Juliett",
       "slug": "j-juliett",
-      "colors": [
-        "blue",
-        "white"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_6.png",
       "original_name": "input_file_6.png"
     },
@@ -179,13 +116,8 @@
       "letter": "K",
       "name": "Kilo",
       "slug": "k-kilo",
-      "colors": [
-        "yellow",
-        "blue"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_7.png",
       "original_name": "input_file_7.png"
     },
@@ -195,13 +127,8 @@
       "letter": "L",
       "name": "Lima",
       "slug": "l-lima",
-      "colors": [
-        "yellow",
-        "black"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_8.png",
       "original_name": "input_file_8.png"
     },
@@ -211,13 +138,8 @@
       "letter": "M",
       "name": "Mike",
       "slug": "m-mike",
-      "colors": [
-        "blue",
-        "white"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_9.png",
       "original_name": "input_file_9.png"
     },
@@ -227,13 +149,8 @@
       "letter": "N",
       "name": "November",
       "slug": "n-november",
-      "colors": [
-        "blue",
-        "white"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_10.png",
       "original_name": "input_file_10.png"
     },
@@ -243,13 +160,8 @@
       "letter": "O",
       "name": "Oscar",
       "slug": "o-oscar",
-      "colors": [
-        "yellow",
-        "red"
-      ],
       "identification": "probable_variant",
       "notes": "Вероятно Oscar: в исходнике жёлтый треугольник сверху справа, красный снизу слева — цвета переставлены относительно стандартного O. Рисунок сохранён.",
-      "settings": {},
       "archive_member": "input_file_11.png",
       "original_name": "input_file_11.png"
     },
@@ -259,13 +171,8 @@
       "letter": "P",
       "name": "Papa",
       "slug": "p-papa",
-      "colors": [
-        "blue",
-        "white"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_12.png",
       "original_name": "input_file_12.png"
     },
@@ -275,12 +182,8 @@
       "letter": "Q",
       "name": "Quebec",
       "slug": "q-quebec",
-      "colors": [
-        "yellow"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_13.png",
       "original_name": "input_file_13.png"
     },
@@ -290,13 +193,8 @@
       "letter": "R",
       "name": "Romeo",
       "slug": "r-romeo",
-      "colors": [
-        "red",
-        "yellow"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_14.png",
       "original_name": "input_file_14.png"
     },
@@ -306,13 +204,8 @@
       "letter": "S",
       "name": "Sierra",
       "slug": "s-sierra",
-      "colors": [
-        "white",
-        "blue"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_15.png",
       "original_name": "input_file_15.png"
     },
@@ -322,14 +215,8 @@
       "letter": "T",
       "name": "Tango",
       "slug": "t-tango",
-      "colors": [
-        "red",
-        "white",
-        "blue"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_16.png",
       "original_name": "input_file_16.png"
     },
@@ -340,13 +227,8 @@
       "letter": "U",
       "name": "Uniform",
       "slug": "u-uniform",
-      "colors": [
-        "red",
-        "white"
-      ],
       "identification": "identified",
-      "notes": "Добавлен пользователем отдельно от исходного архива.",
-      "settings": {}
+      "notes": "Добавлен пользователем отдельно от исходного архива."
     },
     {
       "source": "v-victor.jpg",
@@ -354,13 +236,8 @@
       "letter": "V",
       "name": "Victor",
       "slug": "v-victor",
-      "colors": [
-        "white",
-        "red"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {},
       "archive_member": "input_file_17.png",
       "original_name": "input_file_17.png"
     },
@@ -370,16 +247,8 @@
       "letter": "W",
       "name": "Whiskey",
       "slug": "w-whiskey",
-      "colors": [
-        "blue",
-        "white",
-        "red"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {
-        "relief": 0.12
-      },
       "archive_member": "input_file_18.png",
       "original_name": "input_file_18.png"
     },
@@ -389,13 +258,8 @@
       "letter": "X",
       "name": "X-ray",
       "slug": "x-x-ray",
-      "colors": [
-        "white",
-        "blue"
-      ],
       "identification": "probable_variant",
       "notes": "Не подтверждён: предположительно X-ray, но в исходнике дополнительный синий диагональный крест. Не стандартный X; рисунок сохранён.",
-      "settings": {},
       "archive_member": "input_file_19.png",
       "original_name": "input_file_19.png"
     },
@@ -405,13 +269,8 @@
       "letter": "Y",
       "name": "Yankee",
       "slug": "y-yankee",
-      "colors": [
-        "yellow",
-        "red"
-      ],
       "identification": "probable_variant",
       "notes": "Вероятно Yankee: в исходнике есть дополнительная пересекающая красная полоса; рисунок сохранён без исправления.",
-      "settings": {},
       "archive_member": "input_file_20.png",
       "original_name": "input_file_20.png"
     },
@@ -421,17 +280,8 @@
       "letter": "Z",
       "name": "Zulu",
       "slug": "z-zulu",
-      "colors": [
-        "yellow",
-        "blue",
-        "red",
-        "black"
-      ],
       "identification": "identified",
       "notes": "",
-      "settings": {
-        "relief": 0.12
-      },
       "archive_member": "input_file_21.png",
       "original_name": "input_file_21.png"
     }

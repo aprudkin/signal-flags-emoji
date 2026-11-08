@@ -1,10 +1,11 @@
 {
   "count": 26,
-  "checks": "dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256",
+  "checks": "dimensions, PNG/RGBA, sRGB, transparent borders, solid interior, single component, no holes, 90px bounds, original SHA-256, original opaque RGB preserved",
   "files": [
     {
       "flag": "a-alfa",
       "source_sha256": "3491dff4649040a7c5c4555d8335fc1c1dbf142b851bb8674d7d8231ce58643e",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           2048,
@@ -18,8 +19,8 @@
           1905,
           1916
         ],
-        "bytes": 155687,
-        "sha256": "38ea4f2208912460c08937c07b36083c95a8000191d26f41f1d9b47a4d8dcab7"
+        "bytes": 2232067,
+        "sha256": "86d24d8f76098b265317891690197df1ff5a784c50d6a0b88ee9e551a3e47728"
       },
       "emoji": {
         "size": [
@@ -34,13 +35,14 @@
           95,
           95
         ],
-        "bytes": 6790,
-        "sha256": "0a44f9bed1e39dbc18585ed1954cbf84031de9a8168a622fa3d7e337123bc482"
+        "bytes": 13780,
+        "sha256": "9e0a3661b00c5bd1e42788f8082a9482a5386f0ed44ccfc825c09186a02073f6"
       }
     },
     {
       "flag": "b-bravo",
       "source_sha256": "4e7de00c38c636fa476e51ca654cf2287147d074728a9ca3e5ee809826f05948",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           2048,
@@ -54,8 +56,8 @@
           1905,
           1915
         ],
-        "bytes": 229397,
-        "sha256": "a328f48fe80e85199071e31ec1da54eb31f1f9191463209d343d10e240ed9978"
+        "bytes": 2460014,
+        "sha256": "a36fdff669b98f8ae6d339ce17f1a786d45d3e4f0703aeb9aaf21f6176d08d42"
       },
       "emoji": {
         "size": [
@@ -70,13 +72,14 @@
           95,
           95
         ],
-        "bytes": 8430,
-        "sha256": "778fa00eb8395f2843b52ea03e4ab402a3f51554296476c9ee0879243eff017d"
+        "bytes": 13814,
+        "sha256": "37e519ee632ff4802d7bd079b69c06f6e90d53edf016efc86edb8ee899ecac99"
       }
     },
     {
       "flag": "c-charlie",
       "source_sha256": "b48345384e6f0ef32bffeda73273599f7e20381a3e634d02a7e2a7a1aab3edb6",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           2048,
@@ -90,8 +93,8 @@
           1906,
           1916
         ],
-        "bytes": 227516,
-        "sha256": "142fc6b9fad0f599129632f3d8f3b9cfb24b9a7f51622d09a190847e0f5d8756"
+        "bytes": 2512246,
+        "sha256": "866f12de5cc2bc820de87a4eee726a7b5c22cc279e5eea5bc702f133c1738b00"
       },
       "emoji": {
         "size": [
@@ -106,13 +109,14 @@
           95,
           95
         ],
-        "bytes": 9073,
-        "sha256": "5222237258ef7187962b7d24670aa35c770abb7ea11490c2f21814f6d9e38929"
+        "bytes": 15021,
+        "sha256": "5b805cd440470d7b27c49462d54bcf2949752a8ceb07f1ac8ac4e805eba8f262"
       }
     },
     {
       "flag": "d-delta",
       "source_sha256": "71d21f700ce2dd38174d594261dd1c1fb3c48a5d465de3d3129ff6b96a3e9b4e",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -126,8 +130,8 @@
           953,
           958
         ],
-        "bytes": 116461,
-        "sha256": "50eaff8ea8e2b3d8839a3e99cf596e88df59318bf8b70b2b7e08f4aa72e5204f"
+        "bytes": 740298,
+        "sha256": "4a9cba92dcad82bf127fea279d9ead7639a5fb8be5a861b82c5888c74a884cb0"
       },
       "emoji": {
         "size": [
@@ -142,13 +146,14 @@
           95,
           95
         ],
-        "bytes": 9690,
-        "sha256": "5266305dd6e86d4e9fbab50a7f3806fa75826e1e8dc3d8f1e3a2c4c2ecc6515b"
+        "bytes": 14081,
+        "sha256": "7ec861cddf4251989014343b8e1be51f12c5e08a478397dcc38608679b604eb6"
       }
     },
     {
       "flag": "e-echo",
       "source_sha256": "0b29bf63e7f4e5bc03bcb1bc6f2ef589c8a931b54745ddc706e57eb036fd3a98",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -162,8 +167,8 @@
           953,
           958
         ],
-        "bytes": 92970,
-        "sha256": "4da62031a3ed5cbd02aa99904fbc2caf27556a8d393c4e58e473373d2a73e4a9"
+        "bytes": 705545,
+        "sha256": "73e6d021212b9fc1b7d078193100d8f7dcdf823f8245a80762d95bcf45cd1cbe"
       },
       "emoji": {
         "size": [
@@ -178,13 +183,14 @@
           95,
           95
         ],
-        "bytes": 8460,
-        "sha256": "13fa4e37df7e9ad739b33d0d85f9aa9562911be6f4afdf5aa2d93c892970727d"
+        "bytes": 13754,
+        "sha256": "f317d44042847b400b6e3ef843d5dbd503fa61df0b595c7d3edcc6fe8a819a37"
       }
     },
     {
       "flag": "f-foxtrot",
       "source_sha256": "7f83f57571ddca3d86a3d180a95f317e4cbc93f56e39c5c118b33b86626bd153",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -198,8 +204,8 @@
           953,
           958
         ],
-        "bytes": 78682,
-        "sha256": "248df758b4c8ebbfddb6ec7ab11db2625cc83a1947a948c4aed994d4c6cda717"
+        "bytes": 724607,
+        "sha256": "f2dc6309c7190a4a5f9595e06aa038ec3d1aa5384f4f9d8c105ca9fe8732e336"
       },
       "emoji": {
         "size": [
@@ -214,13 +220,14 @@
           95,
           95
         ],
-        "bytes": 8689,
-        "sha256": "25c1cf90dbeab5ba4f9a0128b52288ff4b57add30af9916e6e1469a2d8b85608"
+        "bytes": 16084,
+        "sha256": "e2e6780295a3193b5a2ceb9d8de5ff7670bf2f44c4b7a99c9dfc25b188971b0f"
       }
     },
     {
       "flag": "g-golf",
       "source_sha256": "e17bcccc0663fe5186a7719031f5bc867f712d676a3afe668086d6f77fc97328",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -234,8 +241,8 @@
           953,
           958
         ],
-        "bytes": 109468,
-        "sha256": "9e3c98812ca513967654902f21b6426f93381fa40acd254733a55e0bcbc67568"
+        "bytes": 735385,
+        "sha256": "a7dfdba6e930aca4f5397dd85e1ee739a5fc00d53ecbe0d15d261316120913f4"
       },
       "emoji": {
         "size": [
@@ -250,13 +257,14 @@
           95,
           95
         ],
-        "bytes": 8619,
-        "sha256": "061982b7ca055690669a0d3e2f391f8f8aa186cab08ae72dace625d25381fd99"
+        "bytes": 14043,
+        "sha256": "8821e582e55e42ec0dc45244333be47a5c922fc1797508f1d753856ed4a34d08"
       }
     },
     {
       "flag": "h-hotel",
       "source_sha256": "d26dea574c66a167fb6dc6fca68da3d6e42f40ae959d37573760b61dd512414b",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -270,8 +278,8 @@
           953,
           958
         ],
-        "bytes": 63737,
-        "sha256": "74719fdd0ea59583cf1a49028b5dd4c9ef5ec4383819482714a63345ab7555be"
+        "bytes": 693171,
+        "sha256": "8d7311a3e64aa3fe00c24a7b2d952abc5e76826947a9d872fe775ad96e5bb985"
       },
       "emoji": {
         "size": [
@@ -286,13 +294,14 @@
           95,
           95
         ],
-        "bytes": 6730,
-        "sha256": "8caebf5286e5cf13fc978c1c465bc35b8ba304234a9a80b297266a5720a1844d"
+        "bytes": 14588,
+        "sha256": "b5ecc838c5bb59f443b58e602c0bf34e701ffbedc7bbbb1e2d5403e35c3389bd"
       }
     },
     {
       "flag": "i-india",
       "source_sha256": "30ed842374546ef7f6b375035820863a30c1499708bcadfc208e321c35d9cb9b",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -306,8 +315,8 @@
           953,
           958
         ],
-        "bytes": 91979,
-        "sha256": "6c89a04a168140094fa202f6ad25b2118bd1717f2654c12c45d8f78e10e760d6"
+        "bytes": 681130,
+        "sha256": "fdd4517ffd9d158fa0289575a006d924eea51555b3e4eccbcc1246701cf83af7"
       },
       "emoji": {
         "size": [
@@ -322,13 +331,14 @@
           95,
           95
         ],
-        "bytes": 8535,
-        "sha256": "6cb562b0be661aa48682d55a6662a22591ef70e0c0da0e8955bfba76f1e2313b"
+        "bytes": 14288,
+        "sha256": "7ad879e8a3a6e7c8dd6a801ca9f168ed6efbae9bb3b46d089b0f1c2e2706ae33"
       }
     },
     {
       "flag": "j-juliett",
       "source_sha256": "c3c0122019ceb1f0be719fe629703db59013b5b60ab9c3a6671e30a02c3e1a53",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -342,8 +352,8 @@
           953,
           958
         ],
-        "bytes": 75590,
-        "sha256": "e52811379aa58b64522fd24ea3f70a86df0ed0cd58a3257773787c53a831e8d8"
+        "bytes": 671085,
+        "sha256": "26f2e8b2e383808c5226e20793c92273c2d83491bce0e638dee0a16ad836fd15"
       },
       "emoji": {
         "size": [
@@ -358,13 +368,14 @@
           95,
           95
         ],
-        "bytes": 7732,
-        "sha256": "ae85bcbb093d3b2d5d73b12323f636619d5b690879eb3eb4934e8d687353e9ee"
+        "bytes": 13703,
+        "sha256": "de8d4131907de806f3c9607db3f1b1dff2c7462382bce9fd61e8ec14efde42f3"
       }
     },
     {
       "flag": "k-kilo",
       "source_sha256": "ad163ce929934de73c96fdf685d0bc932dad309a414a0eaf46b50916311406af",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -378,8 +389,8 @@
           953,
           958
         ],
-        "bytes": 101729,
-        "sha256": "ec7e67843771908a132b8942cc81cfeb828ec6aa29638b95bdda054c9b7a19bd"
+        "bytes": 712951,
+        "sha256": "f8954fb72a2a29236537a0e75796acf27473a7ce71feb45020b7c79af7463106"
       },
       "emoji": {
         "size": [
@@ -394,13 +405,14 @@
           95,
           95
         ],
-        "bytes": 8156,
-        "sha256": "cddd728ea7a6a24ece7764b3ddab9675a6af695bf6b0d0e523144c9a5bf6250c"
+        "bytes": 13581,
+        "sha256": "60982e6bccf3f50d12dedf960a7fda8247e433d79aa54bf791dee86eeac6d7ea"
       }
     },
     {
       "flag": "l-lima",
       "source_sha256": "cb8b8b51aa90e4b4cc50ea66bcd28e27cc7427b5df2aa367f78e71635d8e8ec4",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -414,8 +426,8 @@
           953,
           958
         ],
-        "bytes": 74126,
-        "sha256": "0d4cbae974e8a6e459e80db2fd25ffedce4fe987a83065bc7787d49c6696e6a8"
+        "bytes": 654740,
+        "sha256": "543bada13c761cfcf01fabd849dcf2b80af0a2e0256a76e1fb5e84b941d34e87"
       },
       "emoji": {
         "size": [
@@ -430,13 +442,14 @@
           95,
           95
         ],
-        "bytes": 7425,
-        "sha256": "d0254806e42afb4845df9bacf40982d776926777fa269a96335aad4b4177233a"
+        "bytes": 13086,
+        "sha256": "8df02c07e4c24a04e75cfc2789fa55e3180411b10cdd2f1540f9d5b91381aaec"
       }
     },
     {
       "flag": "m-mike",
       "source_sha256": "93433c696d521fadc4e0d14f0d69aefc6bd46ad37c116d9c7ac51bd2354713c6",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -450,8 +463,8 @@
           953,
           958
         ],
-        "bytes": 104204,
-        "sha256": "b7408ff0d262bca42495cb4e36cb728c752d5144325d580dd3b494820827659f"
+        "bytes": 748750,
+        "sha256": "7946f53b0ded7386a6779c5e16e752c75df33476b8545d5a79323e07881714ff"
       },
       "emoji": {
         "size": [
@@ -466,13 +479,14 @@
           95,
           95
         ],
-        "bytes": 10488,
-        "sha256": "2b9737b4560197b2bbcbcc104c20d4913028af88d33e2266921c8f9aed83acf2"
+        "bytes": 15803,
+        "sha256": "49373a628b8ef24c814e4df24291f7400fe6bd40f9e8f13fac2bdea2d7d04b7a"
       }
     },
     {
       "flag": "n-november",
       "source_sha256": "6b13d759832bc8d102f780742697158643c0aebcecf29a173eab37c991f7cee1",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -486,8 +500,8 @@
           953,
           958
         ],
-        "bytes": 85202,
-        "sha256": "1608e8d87d7ddcfc15e1815cc9cdf4b0756591a5ffb625eb03bbd4b04fac7731"
+        "bytes": 715753,
+        "sha256": "e5a923e19b623435f707f15c29438fee23fd9a97dbf1ce8520df0368b494e482"
       },
       "emoji": {
         "size": [
@@ -502,13 +516,14 @@
           95,
           95
         ],
-        "bytes": 9307,
-        "sha256": "00faf9df06585062c423dc0cba816ca22bfcd6f394f8e26f89debc8c32e2c5ff"
+        "bytes": 15229,
+        "sha256": "18af15337b12d30374b3e4c4a09d6e10b9d9fc75be9c59b57e6e59672d22e608"
       }
     },
     {
       "flag": "o-oscar",
       "source_sha256": "c3450e60ee9c40612e89c674dccab4e23283e4379766d348a832021b42ec8822",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -522,8 +537,8 @@
           953,
           958
         ],
-        "bytes": 120874,
-        "sha256": "29886d4a63deae3685f33cd317d83286205d250dcdf3a08c2ecfb07a73a6b029"
+        "bytes": 754067,
+        "sha256": "d9231aa8eb8d62770d67f95759826a3e1169a4b056cbc482454916d94eeca5ec"
       },
       "emoji": {
         "size": [
@@ -538,13 +553,14 @@
           95,
           95
         ],
-        "bytes": 9083,
-        "sha256": "9c68f442eb29cbfef1181338e5745bb220cf2c669366e4d980fc4bc0f06d2295"
+        "bytes": 14767,
+        "sha256": "64a4eb9fe5c167de863ca90a76f0c2a281a3a85adf87505db71ffd01dc3bcfe3"
       }
     },
     {
       "flag": "p-papa",
       "source_sha256": "b89e33951d1a745486b592f97fdc27415488256e3f5c4c7ed711c534e2b318b8",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -558,8 +574,8 @@
           953,
           958
         ],
-        "bytes": 97022,
-        "sha256": "dacfe64aa15fb39044f614f7d1cd7cde4f7f1a693302c5f2fa4bd892f926dc13"
+        "bytes": 704624,
+        "sha256": "8da749529ba81df59085afb615018d55beb9467b2758d39d01d24408967b7144"
       },
       "emoji": {
         "size": [
@@ -574,13 +590,14 @@
           95,
           95
         ],
-        "bytes": 8326,
-        "sha256": "4ec2671b5d56cef2af5c308ed175c58b7efd0269a14eccb16724c0e85b84fd4e"
+        "bytes": 13963,
+        "sha256": "aeb30482490f1c13dead4a54a5a4b44d46049d428a8a61c47bdfc1b3616523ab"
       }
     },
     {
       "flag": "q-quebec",
       "source_sha256": "881037eb45b7a03c81a5e7fabc162feb0cf5f03e33453a66ba82a83f6b2ac22b",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -594,8 +611,8 @@
           953,
           958
         ],
-        "bytes": 117605,
-        "sha256": "a47b9cce6140d4c1bbcfe717a4fb87a0c9134882885e89e59fd015218d57e996"
+        "bytes": 735214,
+        "sha256": "b5e28f91584eede75002a014f14636d132df3fff102bb53f5a1e8f9bda4ab6a4"
       },
       "emoji": {
         "size": [
@@ -610,13 +627,14 @@
           95,
           95
         ],
-        "bytes": 9003,
-        "sha256": "b3ceb8230c4cf35dcb0afcb6e72568f8afaa45ab3d25b4846fbb59afc3afcdb4"
+        "bytes": 14177,
+        "sha256": "2b60ffb83cf6e887830a37a6b9e4b47bbaa4fd35ebafe920894602342c4229de"
       }
     },
     {
       "flag": "r-romeo",
       "source_sha256": "17fce158a1ae74fcaea9354fbac8558c6278672175318b4b518fe2ca80857141",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -630,8 +648,8 @@
           953,
           958
         ],
-        "bytes": 113177,
-        "sha256": "ab7557e5a48f6c94151f98480833f9a42ee23e89391a73dfd6bb823c733d0d33"
+        "bytes": 740970,
+        "sha256": "8fe1d03f213a20a5da2a89c630d2593125a948b185b4468a7192fb8d12d9b388"
       },
       "emoji": {
         "size": [
@@ -646,13 +664,14 @@
           95,
           95
         ],
-        "bytes": 9597,
-        "sha256": "c7e2d14966d9d7426eaf38595f866dd7764f8c879c3d30ad72033135fc20663e"
+        "bytes": 14582,
+        "sha256": "a655679621c7deecee11dc6c18188e0510ade2ebe40504c172f107300e10590c"
       }
     },
     {
       "flag": "s-sierra",
       "source_sha256": "7f45ecba2b5e6e53d6041a89b31bd86c72ce8488166f3236f115725f0ea7d688",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -666,8 +685,8 @@
           953,
           958
         ],
-        "bytes": 49118,
-        "sha256": "0a5b0b11bcf0ed365bd556d86f360307ac24678388c457c4d1c4e4e4ea7e1e4c"
+        "bytes": 657571,
+        "sha256": "b8b8644e550e2e117e7acb018e8efcfe76400a28d695be989f93295725d0ea5e"
       },
       "emoji": {
         "size": [
@@ -682,13 +701,14 @@
           95,
           95
         ],
-        "bytes": 6553,
-        "sha256": "6f572155c34af6c4bd677ce966260aa58d936320090646761a160b1be4d51fc9"
+        "bytes": 14526,
+        "sha256": "747b0239028a5398a33999da79f8f20b68d7eac7380821e1e48478529838dd1b"
       }
     },
     {
       "flag": "t-tango",
       "source_sha256": "822014adf689c0f10be576b098d4318c9e146e7feda2083d031eb424cb4bf783",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -702,8 +722,8 @@
           953,
           958
         ],
-        "bytes": 72911,
-        "sha256": "ab0b1396bee4e7383bf1c63e37b72284e50be063bce40fcf7973238942b25c71"
+        "bytes": 693560,
+        "sha256": "418cfcec4d5a160ecec350d69d6a749c3ac0bb4c76cf414b62cc5fc317296bf9"
       },
       "emoji": {
         "size": [
@@ -718,13 +738,14 @@
           95,
           95
         ],
-        "bytes": 7135,
-        "sha256": "df8561c5274a95de9e8d0ab9186521100bfe06c5e1db81fcd12279abb2df459b"
+        "bytes": 14315,
+        "sha256": "a618f1a8c9b8c1478ee891e43b2c9195ea4b0a29411d9a7f37d862326b6e9a68"
       }
     },
     {
       "flag": "u-uniform",
       "source_sha256": "eff121888d549f4593153bce30193ac805bd5b468c3ce8661f124788dbca5c6c",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           2048,
@@ -738,8 +759,8 @@
           1906,
           1915
         ],
-        "bytes": 176910,
-        "sha256": "743596431219e3931871039d1eb1c2ce86b95b92c854e9bc9c77bd36a52011f2"
+        "bytes": 2452908,
+        "sha256": "d6eae7fd03d2114603c0ddcb8b93b0ce90889d6bad6b92d21af371f053213ffc"
       },
       "emoji": {
         "size": [
@@ -754,13 +775,14 @@
           95,
           95
         ],
-        "bytes": 7477,
-        "sha256": "aa3f2abfc3096d95c592aa7addab4365c1a3ff26d3740b7bf83380ad4805f07f"
+        "bytes": 14719,
+        "sha256": "0ebed215d6fef797bf92d2fb8599cdca78734991d5e0653d8c97bff4ff8fda96"
       }
     },
     {
       "flag": "v-victor",
       "source_sha256": "dddc8c3063beca28016f61646acc4e097111bba11f310e72e2506d382df36efc",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -774,8 +796,8 @@
           953,
           958
         ],
-        "bytes": 82875,
-        "sha256": "5a101ad4f5b3333a9692053071297549d151ac315ff9e751ed71015ea4db60c2"
+        "bytes": 769282,
+        "sha256": "b29fa9c9b34cf52e490f99ed00a31791e3adc35faddf3786aad1efa96d86a1b8"
       },
       "emoji": {
         "size": [
@@ -790,13 +812,14 @@
           95,
           95
         ],
-        "bytes": 10060,
-        "sha256": "3f6d60ec858ebf863283e9a6862de3ae0f92fbd58a16443b1e237ed5cdf28f9a"
+        "bytes": 17137,
+        "sha256": "f7de706f771d2b36fc19e48687d8c42ed6482dddc121cccf3342a9e294318da8"
       }
     },
     {
       "flag": "w-whiskey",
       "source_sha256": "b07380b5a0172c3de159259deda8b8f371886db4bbcb0e42b01d8192deeb1c6c",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -810,8 +833,8 @@
           953,
           958
         ],
-        "bytes": 69364,
-        "sha256": "ca61d85d54c68b3b91ad4b3509cfa31477a761d6e053fadfbf4b30406086101f"
+        "bytes": 760636,
+        "sha256": "9b71bb1bc9091817c0dbe0422f0ab59871a3bd46ee6fba60e3d50b972c6e9097"
       },
       "emoji": {
         "size": [
@@ -826,13 +849,14 @@
           95,
           95
         ],
-        "bytes": 8567,
-        "sha256": "a00663c0ccfa5aa0af22f1baff4691215a032e64d51119e58f426236add8872b"
+        "bytes": 14853,
+        "sha256": "6a46d8c69a0cd2d00c9e4a34fd84234ce1683244e948fd518fde1cadea14c99c"
       }
     },
     {
       "flag": "x-x-ray",
       "source_sha256": "75a9f784d0397418c951e932f9e276befcccbfcfaa15afefa6cc331d0ac51b3f",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -846,8 +870,8 @@
           953,
           958
         ],
-        "bytes": 107408,
-        "sha256": "7e23c49894e8db9648d454e2f99b9ffa989b066b5b3061029695654c801bc8ca"
+        "bytes": 773732,
+        "sha256": "d928e2e956bd6cafd6ef58118eab99012b40048179f7b9d270b420fed49afab0"
       },
       "emoji": {
         "size": [
@@ -862,13 +886,14 @@
           95,
           95
         ],
-        "bytes": 10986,
-        "sha256": "11b92abf1ea92d1a63d4ac6784093535c21fc12ae3d58e0e410403c7db412504"
+        "bytes": 17156,
+        "sha256": "190db923e14db4be7074633c36b342e64a24394c24dc76f8d42d88dcb5b086cc"
       }
     },
     {
       "flag": "y-yankee",
       "source_sha256": "b1313e63194806d8a43b1fe9a21b4a061ccfe3f24ac010cc069ebbd1307a971b",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -882,8 +907,8 @@
           953,
           958
         ],
-        "bytes": 152365,
-        "sha256": "7809b32c0226522b4a1c769e6c6d5cf49446f3fa8a08ad6ac1b9edc3f94e07ae"
+        "bytes": 861846,
+        "sha256": "c80f0cde065fd18dc109ff2a3df8a7e1908ab385ebea5d8e030fdac9d5a39edf"
       },
       "emoji": {
         "size": [
@@ -898,13 +923,14 @@
           95,
           95
         ],
-        "bytes": 12767,
-        "sha256": "31c3b50a62f08a1ae7b8895044e335b848a33ac40a0df9a3d55b3b6bb23fff42"
+        "bytes": 16759,
+        "sha256": "54d48064a8ec60e72e2eb47b2f2ace78754baca1363a80e9fe76d73ae1288a83"
       }
     },
     {
       "flag": "z-zulu",
       "source_sha256": "14721bab7d6343fcde34ace6427a5025bebe6e1ade069f28576846a612563d84",
+      "original_opaque_rgb_preserved": true,
       "processed": {
         "size": [
           1024,
@@ -918,8 +944,8 @@
           953,
           958
         ],
-        "bytes": 100999,
-        "sha256": "14067e007263c5fc5d8a446e581c195c35d4a9697f48a030751c480dfad66434"
+        "bytes": 699768,
+        "sha256": "624e45f2e015fa8112f9288274fb20752d708e65229ad9c0e78c0547a9dc240c"
       },
       "emoji": {
         "size": [
@@ -934,8 +960,8 @@
           95,
           95
         ],
-        "bytes": 9451,
-        "sha256": "dabc936ac168e877511bb26b496476cb80248872856d8767efac6c7d89fffc86"
+        "bytes": 13880,
+        "sha256": "9228916b1901fa88c4e1f35b5aa5bdf7a9a58b071e416d1eb91dfa9e2d165d77"
       }
     }
   ]
