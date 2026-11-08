@@ -4,6 +4,8 @@
 
 26 морских сигнальных флагов из предоставленного архива и добавленных исходников, обработанные для использования рядом с текстом в Telegram. Готовые файлы — **PNG RGBA, 100 × 100 px, sRGB**, с прозрачным фоном и лёгким объёмом. Полотнище занимает до 90 × 90 px, пропорции сохранены.
 
+**[Добавить эмодзи в Telegram — HoistTheFlag](https://t.me/addemoji/HoistTheFlag)**
+
 <p>
   <img src="emoji/a-alfa.png" width="32" height="32" alt="A Alfa" title="A Alfa">
   <img src="emoji/b-bravo.png" width="32" height="32" alt="B Bravo" title="B Bravo">
